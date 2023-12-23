@@ -76,7 +76,7 @@ UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/ai_bot_supp')
 
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "False"), False)
 SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 300)) # Add time in seconds
